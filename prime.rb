@@ -10,6 +10,7 @@ def prime?(number)
     # test if number can be divided evenly by any odd number before it
     while i < number
       if number % i == 0; return false end
+      #increment by 2 in order to skip testing even numbers already eliminated
       i += 2
     end
     # return true if number passes all the tests
